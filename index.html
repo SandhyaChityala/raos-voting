@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raos eVote - Vote Now</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗳️ Raos International School</h1>
+    <h2>Vote for Head Boy</h2>
+    <p class="subtitle">Click on your preferred candidate</p>
+
+    <div class="candidates">
+      <div class="card" onclick="selectCandidate('Mustaba')">
+        <img src="images/mustaba.jpg" alt="Mustaba" />
+        <p>Mustaba</p>
+      </div>
+      <div class="card" onclick="selectCandidate('Abdul')">
+        <img src="images/abdul.jpg" alt="Abdul" />
+        <p>Abdul</p>
+      </div>
+      <div class="card" onclick="selectCandidate('Samanvith Reddy')">
+        <img src="images/samanvith.jpg" alt="Samanvith" />
+        <p>Samanvith Reddy</p>
+      </div>
+    </div>
+
+    <div id="nextStep" style="display:none;">
+      <p>You selected: <strong id="selectedName"></strong></p>
+      <button onclick="submitVote()">Submit Vote</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

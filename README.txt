@@ -1,0 +1,1 @@
+Replace images inside the images folder with real candidate photos (same file names).
